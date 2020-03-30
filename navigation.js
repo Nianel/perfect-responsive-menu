@@ -6,3 +6,12 @@ toggleMenu.addEventListener('click', function() {
 	toggleMenu.setAttribute('aria-expanded', !open);
 	menu.hidden = !menu.hidden;
 });
+
+function noScroll() {
+	if ($('body').hasClass('noscroll')) {
+			$('body').removeClass('noscroll');
+	}
+	else {
+			$('body').addClass('noscroll');
+	}
+}
